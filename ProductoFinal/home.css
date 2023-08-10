@@ -1,0 +1,210 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Cambiamos a un diseño de dos columnas */
+    grid-gap: 20px; /* Añadimos espacio entre las columnas */
+  }
+
+
+.contenido{
+    flex: 3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Define the space between buttons */
+    margin-bottom: 20px;
+}
+
+.custom-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/*Encabezado*/
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;       /* Añadir flexbox */
+    justify-content: space-between; /* Separar el logo de los enlaces */
+    align-items: center; /* Centrar elementos verticalmente */
+}
+
+a {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+a:hover {
+    color: #fff;  /* Cambio de color al pasar el mouse */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los enlaces horizontalmente */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Quitar margen al último elemento */
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center; /* Centrar verticalmente el contenido de los enlaces */
+    text-decoration: none;
+}
+
+nav ul li a img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 20px;  /* Define el espacio entre los botones */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.custom-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #2980b9;
+}
+
+
+/*Seccionnes */
+
+section{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+section h2{
+    color:#333;
+}
+
+/*Barra lateral */
+
+aside{
+    background-color: #f7f7f7;
+    padding: 20px;
+    flex: 1;
+    display: block;
+}
+
+aside h2{
+    color:#333;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color:#333;
+}
+
+/*El pie de pagina */
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .contacto ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer.contacto ul li{
+    margin-bottom: 10px;
+}
+
+footer .encuesta{
+    margin-top: 20px;
+}
+
+footer .encuesta p{
+    margin-bottom: 10px;
+}
+
+footer .encuesta form input[type="submit"]:hover{
+    background-color: #223;
+}
+
+
+
+/* Estilo Responsivo */
+
+@media only screen and (max-width: 766px){
+    
+    header h1 {
+        font-size: 24px;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    aside{
+        margin-top: 20px;
+    }
+}
